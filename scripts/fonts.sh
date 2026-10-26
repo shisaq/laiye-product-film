@@ -1,6 +1,7 @@
 # 品牌字体查找，被 setup.sh 和 new_film.sh 引用（. fonts.sh）。需要先设好 SKILL=<skill 根目录>。
 # 查找顺序：skill 自带的 brand/fonts → $LAIYE_FONTS（公司共享的字体目录）→ 系统字体目录。
-# 汉仪雅酷黑、TT Supermolot Neue 是来也公司授权字体：仓库不带它们时，从公司「通用素材/字体-公司版权」装到系统里，或设 LAIYE_FONTS。
+# 汉仪雅酷黑、TT Supermolot Neue 是来也公司授权字体：仓库不带它们时，从飞书字体包（仅来也科技账号可访问）下载后装到系统里，或设 LAIYE_FONTS。
+FONT_URL="https://laiye-tech.feishu.cn/drive/folder/GVu9fQ7Btl7v1SdMsmmcip77nub"
 BRAND_FONTS="HYYakuHei-85W.ttf TTSupermolotNeue-Bold.otf TTSupermolotNeue-DemiBold.otf Inter.ttf JetBrainsMono.ttf"
 HAN_FONTS="SourceHanSansSC-Regular.otf SourceHanSansSC-Medium.otf SourceHanSansSC-Bold.otf"
 

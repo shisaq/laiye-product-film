@@ -13,7 +13,7 @@ sh ~/.claude/skills/laiye-product-film/scripts/setup.sh
 
 - 每次使用时 `setup.sh` 都会先 `git pull` 自动更新 skill，然后准备渲染引擎（Lemo-Opuscar，第一次几分钟）。
 - 需要：git、Node 20+、ffmpeg、Python 3.11+（或 uv）。
-- **字体**：汉仪雅酷黑 85W、TT Supermolot Neue 是来也公司授权字体，**不在仓库里**。从来也视频组「通用素材/字体-公司版权」装到系统字体即可；或者把字体文件放在一个目录里，设 `LAIYE_FONTS=<目录>`。中文片还需要系统装有思源黑体（Source Han Sans SC）。`setup.sh` 会告诉你缺什么。
+- **字体**：汉仪雅酷黑 85W、TT Supermolot Neue 是来也公司授权字体，**不在仓库里**。从[飞书字体包](https://laiye-tech.feishu.cn/drive/folder/GVu9fQ7Btl7v1SdMsmmcip77nub)下载（需来也科技账号）装到系统字体即可；或者把字体文件放在一个目录里，设 `LAIYE_FONTS=<目录>`。中文片还需要系统装有思源黑体（Source Han Sans SC）。`setup.sh` 会告诉你缺什么。
 
 ## 模型
 

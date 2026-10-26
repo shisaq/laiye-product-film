@@ -46,7 +46,7 @@ fi
 # 4. 字体
 . "$HERE/scripts/fonts.sh"
 for f in $BRAND_FONTS; do
-  font_path "$f" >/dev/null || echo "! 缺品牌字体 $f：公司授权字体在来也视频组「通用素材/字体-公司版权」，装到系统字体，或设 LAIYE_FONTS=<字体目录>"
+  font_path "$f" >/dev/null || echo "! 缺品牌字体 $f：从 $FONT_URL 下载（需来也科技账号），装到系统字体或设 LAIYE_FONTS=<字体目录>，再重跑本脚本"
 done
 han=$(font_path SourceHanSansSC-Regular.otf || true)
 [ -n "$han" ] && echo "✓ 思源黑体：$(dirname "$han")" || echo "! 没找到思源黑体（中文片的正文字体）。下载 https://github.com/adobe-fonts/source-han-sans/releases 的 SourceHanSansSC 装到系统字体"

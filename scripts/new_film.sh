@@ -45,7 +45,7 @@ cp "$SKILL"/brand/fonts/OFL-*.txt "$DIR/brand/fonts/" 2>/dev/null || true
 . "$SKILL/scripts/fonts.sh"
 for f in $BRAND_FONTS; do
   if p=$(font_path "$f"); then cp "$p" "$DIR/brand/fonts/$f"
-  else echo "! 缺品牌字体 $f：装到系统字体或设 LAIYE_FONTS=<字体目录> 后重跑本脚本（公司授权字体在「通用素材/字体-公司版权」）"; fi
+  else echo "! 缺品牌字体 $f：从 $FONT_URL 下载（需来也科技账号），装到系统字体或设 LAIYE_FONTS=<字体目录>，再重跑本脚本"; fi
 done
 # 思源黑体太大（每个字重约 17MB），不拷进工程，brand.css 用 local() 读系统里装的
 if [ "$LANG_" = zh ] && ! font_path SourceHanSansSC-Regular.otf >/dev/null; then
