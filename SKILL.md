@@ -53,7 +53,7 @@ scripts/     setup.sh · new_film.sh · check.mjs · review.sh · recsheet.sh ·
 这是产品 MG：两种风格展示的都是产品本身（重绘的真实界面和交互），区别只在舞台和镜头，一条片子里也可以混用。
 
 - **Laiye Screencast**：桌面上一段连续的录屏感，窗口浮在壁纸上，镜头跟着操作走。
-- **Laiye Keynote**：把界面一块块拿到暗场上做特写、配大字，更像发布会。
+- **Laiye Keynote**：产品窗口浮在暗场上，镜头推近做特写、配大字，更像发布会。界面不能脱离它所在的窗口单独漂着。
 
 读完所选风格的 `STYLE.md` 全文。风格固定外观，故事由你决定。
 
