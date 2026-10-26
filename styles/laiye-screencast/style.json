@@ -1,0 +1,12 @@
+{
+  "slug": "laiye-screencast",
+  "en": "Laiye Screencast",
+  "cn": "来也实机录屏感",
+  "based_on": "living-screencast",
+  "borrows": [],
+  "library_version": "3961ddb",
+  "created": "2026-10-26",
+  "reference_film": "examples/ap-highlight-v03",
+  "line": "A redrawn Laiye product UI with a recording-software camera; the AI employee's work is shown by a clean MG layer, not a mascot.",
+  "line_cn": "重绘的来也产品界面 + 录屏软件式镜头；AI 员工的工作由干净的 MG 层演出来，不用吉祥物。"
+}

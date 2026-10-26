@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>__TITLE__</title>
+<link rel="stylesheet" href="brand/brand.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100vw;height:100vh;overflow:hidden;background:#000;-webkit-font-smoothing:antialiased}
+#stage,#blur{position:absolute;inset:0;overflow:hidden}
+#world,#mg{position:absolute;left:0;top:0;width:100vw;height:100vh;transform-origin:0 0}
+#hud{position:absolute;inset:0;pointer-events:none}
+</style></head>
+<!-- data-lang：en | zh；data-style：laiye-screencast | laiye-keynote -->
+<body data-lang="__LANG__" data-style="__STYLE__">
+<div id="stage">
+  <div id="blur"><div id="world"></div><div id="mg"></div></div>
+  <div id="hud"></div>
+</div>
+<svg width="0" height="0" style="position:absolute"><filter id="mb" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur id="mbg" stdDeviation="0 0"/></filter></svg>
+<script type="module" src="main.js"></script>
+</body></html>

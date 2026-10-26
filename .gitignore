@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+node_modules/
+examples/*/out/
+examples/*/stills/
+examples/*/events.json
+examples/*/*.mp4
+examples/*/fonts/*.ttf
+examples/*/fonts/*.otf
+# 来也公司授权字体，不随公开仓库分发（setup.sh 从系统字体或 $LAIYE_FONTS 找）
+brand/fonts/HYYakuHei-85W.ttf
+brand/fonts/TTSupermolotNeue-*.otf

@@ -1,0 +1,30 @@
+/* 来也品牌字体与色值。new_film.sh 把 brand/ 整个拷进片子工程，页面用 <link rel="stylesheet" href="brand/brand.css"> 引入。
+   MG 层的文字只用 LY 开头的字体族；产品界面层（data-layer="product"）按产品原样用 --ui-* 字体。 */
+@font-face { font-family: "LY Display ZH"; src: url(fonts/HYYakuHei-85W.ttf) format("truetype"); font-weight: 100 900; }
+@font-face { font-family: "LY Display EN"; src: url(fonts/TTSupermolotNeue-DemiBold.otf) format("opentype"); font-weight: 600; }
+@font-face { font-family: "LY Display EN"; src: url(fonts/TTSupermolotNeue-Bold.otf) format("opentype"); font-weight: 700; }
+@font-face { font-family: "LY Sans ZH"; src: local("Source Han Sans SC"), local("SourceHanSansSC-Regular"), url(fonts/SourceHanSansSC-Regular.otf) format("opentype"); font-weight: 400; }
+@font-face { font-family: "LY Sans ZH"; src: local("Source Han Sans SC Medium"), local("SourceHanSansSC-Medium"), url(fonts/SourceHanSansSC-Medium.otf) format("opentype"); font-weight: 500; }
+@font-face { font-family: "LY Sans ZH"; src: local("Source Han Sans SC Bold"), local("SourceHanSansSC-Bold"), url(fonts/SourceHanSansSC-Bold.otf) format("opentype"); font-weight: 700; }
+@font-face { font-family: "LY Sans EN"; src: url(fonts/Inter.ttf) format("truetype"); font-weight: 100 900; }
+@font-face { font-family: "LY Mono"; src: url(fonts/JetBrainsMono.ttf) format("truetype"); font-weight: 100 800; }
+
+:root {
+  /* 标准色 */
+  --ly-yellow: #FFE600; --ly-black: #000000; --ly-white: #FFFFFF;
+  /* 专色与延伸色：只做类别区分或图表，不抢黄色的位置 */
+  --ly-gold: #BF9C46; --ly-silver: #B5B5B6; --ly-chart-blue: #5187E4;
+  /* 语义色：只在"通过 / 异常"出现时用，面积小 */
+  --ly-ok-dark: #3DDC84; --ly-risk-dark: #FF4D3D; --ly-ok-light: #2FA55A; --ly-risk-light: #D9483B;
+  /* 深色中性阶 */
+  --ly-d-bg: #0B0B0C; --ly-d-surface: #17171A; --ly-d-surface-2: #202024; --ly-d-line: #2A2A2E; --ly-d-muted: #8A8A8F; --ly-d-fg: #F5F5F0;
+  /* 浅色中性阶 */
+  --ly-l-bg: #F8F9FA; --ly-l-surface: #FFFFFF; --ly-l-line: #E6E6E6; --ly-l-muted: #8A8A8A; --ly-l-ink: #1A1A1A;
+
+  /* 字体角色：中文片标题用 --ly-display-zh（字库自带西文，不用切字体）；英文片标题用 --ly-display-en，缺的中文字落到雅酷黑 */
+  --ly-display-zh: "LY Display ZH", sans-serif;
+  --ly-display-en: "LY Display EN", "LY Display ZH", sans-serif;
+  --ly-sans-zh: "LY Sans ZH", "LY Sans EN", sans-serif;
+  --ly-sans-en: "LY Sans EN", "LY Sans ZH", sans-serif;
+  --ly-mono: "LY Mono", "LY Sans EN", monospace;
+}

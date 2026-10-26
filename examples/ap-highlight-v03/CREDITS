@@ -1,0 +1,7 @@
+AI Accounts Payable Assistant — Highlight v03 (50 s, 1920×1080, 30 fps)
+
+Picture: Laiye Worker, Gmail, Google Sheets and Xero interfaces are redrawn and simplified in HTML/CSS/SVG (no screen recording, no third-party logos; Gmail / Sheets / Xero appear as names on neutral colour tiles). Laiye Worker logo, the AI Accounts Payable Assistant avatar and the Laiye logo are Laiye's own brand assets (supplied by Laiye; the Laiye logo is shown inverted to white on the end card).
+Data shown (invoice INV-2026-5211, PO-2026-0518, DO-2026-3302, Xero draft, AP Ledger row) comes from Laiye's own demo recording of 2026-10-23.
+
+Fonts: TT Supermolot Neue (TypeType) — the user's own licensed font, used for all motion-graphics type and the end card; Inter (Rasmus Andersson, SIL OFL 1.1) for the redrawn product interfaces; JetBrains Mono (JetBrains, SIL OFL 1.1). OFL licences in fonts/.
+Music and sound: fully synthesised in sound.py (electronic kit, sub bass, pluck arpeggio, pad, FM bells, risers, foley). No samples, no third-party music.
