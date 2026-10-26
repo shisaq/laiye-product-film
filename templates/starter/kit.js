@@ -132,7 +132,7 @@ export function visibleTexts() {
 }
 
 // ───────── 片尾定版（品牌规定）：产品图标 / 产品名 / 一句主张 / CTA / 来也 logo。逐行入场后停住，不淡出。
-// o = { icon, name, line, cta, theme: 'dark' | 'light', logo（可选，默认按 theme 选） }
+// o = { icon, name, line, note（可选，主张下面的一行小字）, cta, theme: 'dark' | 'light', logo（可选，默认按 theme 选） }
 export function endCard(t, t0, o) {
   if (t < t0 - .05) return '';
   const k = i => eo(seg(t, t0 + i * .18, t0 + .5 + i * .18)), y = i => (1 - k(i)) * 22;
@@ -147,6 +147,7 @@ export function endCard(t, t0, o) {
   if (o.icon) h += row(i++, `<img src="${o.icon}" style="width:120px;height:120px;border-radius:27px;box-shadow:0 12px 40px rgba(0,0,0,${dark ? .45 : .18})">`, 'margin-bottom:34px');
   if (o.name) h += row(i++, `<span data-t="end-name">${o.name}</span>`, `font-family:${disp};font-weight:700;font-size:84px;line-height:1.1;color:${fg}`);
   if (o.line) h += row(i++, `<span data-t="end-line">${o.line}</span>`, `font-family:${disp};font-weight:600;font-size:40px;margin-top:22px;color:${sub}`);
+  if (o.note) h += row(i++, `<span data-t="end-note">${o.note}</span>`, `font-family:${sans};font-weight:500;font-size:28px;margin-top:18px;color:${sub}`);
   if (o.cta) h += row(i++, `<span data-t="end-cta" style="${cta}">${o.cta}</span>`, `font-family:${sans};font-weight:600;font-size:30px;margin-top:40px;letter-spacing:.02em`);
   h += row(i++, `<img src="${logo}" style="height:60px">`, 'margin-top:70px');
   return `<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">${h}</div>`;
