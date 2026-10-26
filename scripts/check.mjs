@@ -70,7 +70,7 @@ const S = await page.evaluate(({ STEP }) => {
         const fam = cs.fontFamily.split(',')[0].trim().replace(/["']/g, ''), key = txt + '\u0000' + fam + '\u0000' + product;
         const o = texts.get(key);
         if (!o) texts.set(key, { t, text: txt, product, fam, weight: cs.fontWeight, px, tagged: !!el.closest('[data-t]') });
-        else o.px = Math.min(o.px, px);
+        else o.px = Math.max(o.px, px);   // 取最大：入场、收起动画中途变小不算
       }
       if (product) continue;
       const add = (c, what) => {
@@ -110,7 +110,7 @@ if (ONLY.has('fonts')) {
   list(errors.map(f => `加载失败：${f.family} ${f.weight}（检查 brand/fonts/ 里的文件）`));
   const small = S.texts.filter(x => (x.tagged && x.px < 26) || (!x.product && !x.tagged && x.px < 16));
   if (small.length) {
-    console.log(`  提醒：${small.length} 段字落到屏幕上偏小（要读的 data-t 文字 < 26px，其他 MG 文字 < 16px）`);
+    console.log(`  提醒：${small.length} 段字即使在最大时落到屏幕上也偏小（要读的 data-t 文字 < 26px，其他 MG 文字 < 16px）`);
     list(small.sort((a, b) => a.px - b.px).map(x => `${ts(x.t)}  ${x.px.toFixed(1)}px  “${x.text.slice(0, 40)}”`), 15);
   }
 }
