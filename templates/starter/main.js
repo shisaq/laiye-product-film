@@ -14,6 +14,7 @@ function render(t) {
   // 1. 先不套镜头，画出界面并量好所有锚点（此时量到的就是世界坐标）
   world.style.transform = mg.style.transform = 'none';
   world.innerHTML = S.world || '';
+  if (F.layout) F.layout(world, t);          // 可选：量完尺寸再排版（如对话自动滚到最新一条）
   const A = anchors(world).all();
   // 2. 镜头（?cam1：固定在 1× 全景，和参考帧对照界面时用）
   const cam = CAM1 ? [W / 2, H / 2, 1] : F.cam.at(t, A);
