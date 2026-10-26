@@ -13,11 +13,14 @@ rm -rf "$DIR/review"; mkdir -p "$DIR/review/frames"
 node core/render/still.mjs "$DIR" --range "$FROM:$END:$STEP" --out "$DIR/review/frames" >/dev/null
 # 末帧单独截一张：确认片尾停住、没有淡出
 node core/render/still.mjs "$DIR" "$END" --prefix z_last_ --out "$DIR/review/frames" >/dev/null
-set -- "$DIR"/review/frames/t_*.jpg "$DIR"/review/frames/z_last_*.jpg
-i=0; n=1
-while [ $# -gt 0 ]; do
-  batch=""; c=0
-  while [ $# -gt 0 ] && [ $c -lt 24 ]; do batch="$batch $1"; shift; c=$((c + 1)); done
-  "$LIB/.venv/bin/python" core/render/sheet.py "$DIR/review/sheet-$(printf %02d $n).jpg" $batch --cols 6 --w 480 >/dev/null
-  echo "$DIR/review/sheet-$(printf %02d $n).jpg"; n=$((n + 1))
-done
+# 按时间数值排序（t_10 不能排在 t_2 前面），每 24 帧拼一张；路径可以带空格
+"$LIB/.venv/bin/python" -I - "$LIB" "$DIR/review" <<'EOF2'
+import sys, glob, os, subprocess
+lib, out = sys.argv[1], sys.argv[2]
+fr = sorted(glob.glob(os.path.join(out, 'frames', 't_*.jpg')), key=lambda p: float(os.path.basename(p)[2:-4]))
+fr += sorted(glob.glob(os.path.join(out, 'frames', 'z_last_*.jpg')))
+for n, i in enumerate(range(0, len(fr), 24), 1):
+    o = os.path.join(out, f'sheet-{n:02d}.jpg')
+    subprocess.run([os.path.join(lib, '.venv/bin/python'), os.path.join(lib, 'core/render/sheet.py'), o, *fr[i:i + 24], '--cols', '6', '--w', '480'], check=True, stdout=subprocess.DEVNULL)
+    print(o)
+EOF2
