@@ -2,8 +2,9 @@
 
 基于 Lemo-Opuscar（MIT）的 Dark Tech Keynote（dark-keynote）改写，改动见 [CHANGES.md](CHANGES.md)。
 来也的既有规范来自 HyperFrames 项目 `20260811 APA 企业版宣传视频 MG` 和 `20260923 智单通` 的 frame.md。
+参考片：AP Product MG v3（`examples/ap-product-mg-v3/`）。
 
-> 发布会级别的产品片：近黑舞台、细网格、柔光，只有一个强调色——来也黄。**主角是产品本身**：重绘的真实界面被从窗口里拿出来，放到舞台上当特写（Marketplace 卡片、AI 员工的对话、选项卡、清单、生成的结果），带着网格般的精确移动。
+> 发布会级别的产品片：近黑舞台、细网格、柔光，只有一个强调色——来也黄。**主角是产品本身**：重绘的真实产品窗口浮在舞台上，镜头推近窗口里正在发生的那一块当特写（Marketplace 卡片、AI 员工的对话、选项卡、清单、生成的结果），带着网格般的精确移动。界面不离开它所在的窗口。
 > 参考（只学语法）：Apple 发布会（黑舞台、光扫、一屏一句、单独一屏的大数字）；Linear / Stripe / Vercel 发布片（吸附网格的运动、1px 线、一个强调色）；Steve Reich 的过程音乐（相位、减法）。不用它们的名字、界面、字体、旋律、logo。
 
 ## 1. 本质，以及它不是什么
@@ -113,7 +114,7 @@
 
 ## 10. 引擎
 
-起步工程：`templates/starter/`（DOM 版，带 2D 镜头和锚点），说明见 `references/engine.md`。要用光扫揭示、2.5D 透视、数字乱跳这类技术时，**写完 TREATMENT 之后**取 opuscar 的示例源码学技术：`sh "$LIB/plugin/skills/lemo-opuscar/scripts/setup.sh" demo dark-keynote`，看 `$LIB/styles/dark-keynote/demo/engine.js`。只借技术，不借故事和镜头。
+起步工程：`templates/starter/`（DOM 版，带 2D 镜头和锚点），说明见 `references/engine.md`。参考实现：`examples/ap-product-mg-v3/`（横向世界和甩镜、向导沿锚点移动、对话自动滚动、居中时钟、按录屏重绘的 Gmail / Xero）。要用光扫揭示、2.5D 透视、数字乱跳这类技术时，**写完 TREATMENT 之后**取 opuscar 的示例源码学技术：`sh "$LIB/plugin/skills/lemo-opuscar/scripts/setup.sh" demo dark-keynote`，看 `$LIB/styles/dark-keynote/demo/engine.js`。只借技术，不借故事和镜头。
 
 ## 11. 变化空间
 

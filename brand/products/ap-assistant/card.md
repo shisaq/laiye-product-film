@@ -41,3 +41,4 @@
 ## 已有的片子
 
 - `examples/ap-highlight-v03/`（skill 根目录下）：Highlight v03（50 秒，英文，无旁白，浅色界面，无吉祥物）。用户审过的版本，是 Laiye Screencast 风格的参考片。修改意见见 `../../../references/lessons.md`。
+- `examples/ap-product-mg-v3/`：Product MG v3（60 秒，英文，无旁白，暗场上的真实窗口：Laiye Worker + Gmail + Xero，AI 员工头像当向导）。用本 skill 做的，2026-10-27 用户定为标杆，是 Laiye Keynote 风格的参考片。

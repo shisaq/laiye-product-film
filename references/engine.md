@@ -72,6 +72,8 @@ sh <skill>/scripts/recsheet.sh <录屏> 8 <目录>  # 录屏联系表
 
 `examples/ap-highlight-v03/`（AP Highlight v03）：Laiye Worker 浅色界面重绘（`ui.js`）、50 秒时间线（`film.js`）、DOM 锚点和甩镜模糊（`main.js`）、合成科技配乐（`sound.py`）。写完 TREATMENT 后再看，只借技术。它早于本 skill，没有 `data-layer` 标记，部分颜色不合品牌规范，别照抄这两点。
 
+`examples/ap-product-mg-v3/`（AP Product MG v3，用本 skill 做的）：横向世界（`Camera` 的 `bounds`）和甩镜、用 `Cursor` 做的向导（AI 员工头像沿 `data-a` 锚点移动）、`layout` 钩子让对话自动滚到最新一条再由 `tail` 跟拍、按录屏帧重绘的 Gmail / Xero、`endCard` 片尾。同样写完 TREATMENT 后再看。
+
 ## 做不了的
 
 - **透明叠层**（带 alpha 的 ProRes 4444，给剪辑软件叠在别的视频上）：本引擎只出 H.264。需要叠层时用 laiye-video-mg（Remotion）或 HyperFrames。

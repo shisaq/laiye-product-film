@@ -24,7 +24,7 @@ brand/       BRAND.md 品牌规范 · tokens.json · brand.css · fonts/ · logo
 styles/      laiye-screencast（实机录屏感）· laiye-keynote（暗场发布）：STYLE.md + CHANGES.md
 references/  brief.md 简报 · storyline.md 故事线 · directing.md 导演 · ui-rebuild.md 重绘界面 · engine.md 引擎 · checks.md 验收 · lessons.md 经验库
 templates/   BRIEF.md · FACTS.md · 故事线.md · TREATMENT.md · starter/（起步工程）
-examples/    参考片的源码和文档（ap-highlight-v03：Laiye Screencast）
+examples/    参考片的源码和文档（ap-highlight-v03：Laiye Screencast；ap-product-mg-v3：Laiye Keynote）
 scripts/     setup.sh · new_film.sh · check.mjs · review.sh · recsheet.sh · sample_colors.py
 ```
 

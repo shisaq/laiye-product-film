@@ -7,6 +7,9 @@ examples/*/events.json
 examples/*/*.mp4
 examples/*/fonts/*.ttf
 examples/*/fonts/*.otf
+examples/*/brand/fonts/*.ttf
+examples/*/brand/fonts/*.otf
+examples/*/review/
 # 来也公司授权字体，不随公开仓库分发（setup.sh 从系统字体或 $LAIYE_FONTS 找）
 brand/fonts/HYYakuHei-85W.ttf
 brand/fonts/TTSupermolotNeue-*.otf

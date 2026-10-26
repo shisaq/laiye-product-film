@@ -1,0 +1,8 @@
+AI Accounts Payable Assistant · Product MG（60 秒，1920×1080，30 fps，英文画面，无旁白）
+
+画面：全部用代码绘制。Laiye Worker 界面按 2026-10-23 录屏重绘（浅色主题）；Gmail 邮件页和 Xero Edit Bill 页按同一段录屏重绘，加简化的浏览器框；不用对方 logo 图片，名称用文字。
+数据：样例单据 INV-2026-5211 / PO-2026-0518 / DO-2026-3302（FreshFarm Produce → Little Red Dot Kitchen，合计 258.33 SGD）、录屏里的界面原文和 AI 回复原文，出处见 FACTS.md。时钟 02:14 / 09:03 为戏剧化处理。
+品牌素材：Laiye Worker 图标、AI Accounts Payable Assistant 图标与头像、来也 logo 为来也科技自有。
+字体：TT Supermolot Neue（TypeType）——来也公司授权；Inter（Rasmus Andersson）、JetBrains Mono（JetBrains）——SIL OFL 1.1。
+音乐与音效：sound.py 程序合成，无第三方采样或音乐。
+渲染引擎：Lemo-Opuscar core（MIT，LemoLab）。制作：laiye-product-film skill（Claude Opus 5.5）。

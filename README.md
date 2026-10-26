@@ -35,7 +35,7 @@ skill 的 frontmatter 锁定了 `model: opus`、`effort: high`，触发后会切
 | `styles/` | Laiye Screencast（实机录屏感）、Laiye Keynote（暗场发布） |
 | `references/` | 简报、故事线、导演、界面重绘、引擎、验收、经验库 |
 | `templates/` | BRIEF / FACTS / 故事线 / TREATMENT 模板，起步工程 |
-| `examples/` | 参考片源码（AP Highlight v03） |
+| `examples/` | 参考片源码（AP Highlight v03 · Laiye Screencast；AP Product MG v3 · Laiye Keynote） |
 | `scripts/` | 环境准备、新建工程、品牌与事实检查、联系表、取色 |
 
 ## 维护
