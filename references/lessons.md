@@ -6,6 +6,7 @@
 
 | 日期 | 片子 | 意见 | 沉淀成的规则 | 落在哪里 |
 |---|---|---|---|---|
+| 2026-10-26 | Mega Showcase 开场片（简报阶段） | — | 录屏里 AI 说 5212 的生菜单价是 2.57、合计 262.96，但原始 PDF 是 2.50，且 262.96 本身算错。录屏里的数字要和原始单据交叉核对，对不上的交用户确认 | `references/brief.md` §1；`brand/products/ap-assistant/card.md` |
 | 2026-10-26 | AP Highlight v01 → v03 复盘 | 产品 MG 最花时间的是理解目标、捋顺故事线和每段重点、检查观众视角的逻辑；v1→v3 的返工几乎都在故事层 | 故事线是默认审批点：观众问题链、每段一个关键信息、误读风险、冷读，用户确认后才制作 | `references/storyline.md`；`templates/故事线.md`；`SKILL.md` 第 4 步 |
 | 2026-10-23 | AP Highlight v02 → v03 | 吉祥物太卡通，不适合 B2B | 不放吉祥物表演；AI 员工的工作由 MG 层演出 | `styles/laiye-screencast` §1、§9；`brand/BRAND.md` §5 |
 | 2026-10-23 | AP Highlight v03 | 按新录屏用浅色界面 | 产品界面跟着产品当前的主题画，不自行换主题 | `styles/laiye-screencast` §2 |
